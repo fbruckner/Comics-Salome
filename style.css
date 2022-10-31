@@ -138,9 +138,12 @@ body {
     padding: 10PX 20px;
 }
 
-.footer {
-    background-color: var(--primario);
+.container-fluid .footer {
+    background-color: var(--primarioOscuro);
     padding-top: 20px;
+}
+.logo-social {
+    align-items: center;
 }
 .footer__texto {
     color: var(--blanco);
