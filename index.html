@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Normalize -->
+    <link rel="stylesheet" href="normalize.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
+    <!-- Icono navegador -->
+    <link rel="shortcut icon" type="image/x-icon" href="../img/Logo_Salo.ico">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Salome COMICS</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a href="index.html">
+            <img class="header__logo" src="../img/Logo_Salo.png" width="150" height="150" title="Volver al Home" alt="Logotipo">
+        </a>
+    </header>
+    <!-- Fin Header -->
+
+    <!-- Barra navegación -->
+    <div class="nav-bag">
+        <nav class="navegacion__principal">
+            <a href="dc.html">DC</a>
+            <a href="marvel.html">Marvel</a>
+            <a href="otros.html">Otros</a>
+            <a href="yo.html">Yo</a>
+        </nav>
+    </div>  
+    <!-- Fin Barra navegación -->
+
+    <!-- Main -->
+    <section class="hero">
+        <div>
+            <h1 class="contenedor__hero">Algunos comics preferidos</h1>
+        </div>
+    </section>
+
+    <main class="contenedor">
+        <section class="contenedor__imagenes1">
+            <img class="animacion__img" src="../img/Wonder-Woman-Black-Gold.jpg" alt="Black and Gold" title="Wonder Woman Black and Gold">
+            <p class="texto__imagen">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam fuga incidunt officia ipsum porro libero doloribus rem nulla corrupti, tempora aperiam.</p>
+            <img class="animacion__img" src="../img/Wonder-Woman-Hiketeia.jpg" alt="Hiketeia" title="Wonder Woman Hiketeia">
+            <p class="texto__imagen">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam fuga incidunt officia ipsum porro libero doloribus rem nulla corrupti, tempora aperiam.</p>
+            <img class="animacion__img" src="../img/wonder-woman-tierra-uno.jpg" alt="Tierra Uno" title="Wonder Woman Tierra Uno">
+            <p class="texto__imagen">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam fuga incidunt officia ipsum porro libero doloribus rem nulla corrupti, tempora aperiam.</p>
+        </section>    
+        <section class="contenedor__imagenes2">    
+            <img class="animacion__img" src="../img/Harley-Quinn-Black-White-Red.jpg" alt="Black White and Red" title="Harley Quinn Black White and Red">
+            <p class="texto__imagen">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam fuga incidunt officia ipsum porro libero doloribus rem nulla corrupti, tempora aperiam.</p>
+            <img class="animacion__img" src="../img/harley.jpg" alt="White Knight" title="Harley Quinn White Knight">
+            <p class="texto__imagen">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam fuga incidunt officia ipsum porro libero doloribus rem nulla corrupti, tempora aperiam.</p>
+            <img class="animacion__img" src="../img/Injustice-Ground-Zero.jpg" alt="Injustice Ground Zero - 1" title="Harley Quinn Injustice Ground Zero - 1">
+            <p class="texto__imagen">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam fuga incidunt officia ipsum porro libero doloribus rem nulla corrupti, tempora aperiam.</p>
+        </section>
+        
+    </main>
+    <!-- Fin Main -->
+    <div class="formulario__formato">
+        <section class="formulario" >
+            <h2 class="formulario__contacto">Contacto</h2>
+
+            <form action="">
+            <fieldset>
+                <legend class="formulario__legend">Si tienes comics para vender, contáctame.</legend>
+                
+                <div class="formulario__campos">
+                    <div class="campo">
+                    <label for="">Nombre y Apellido</label>
+                    <input class="formulario__input" type="text" placeholder="Ingresa tu nombre y apellido" />
+                    </div>
+                    <div class="campo">
+                    <label for="">Teléfono</label>
+                    <input class="formulario__input" type="tel" placeholder="Ingresa tu número de teléfono" />
+                    </div>
+                    <div class="campo">
+                    <label for="">Correo electrónico</label>
+                    <input class="formulario__input" type="email" placeholder="Ingresa tu correo electrónico" />
+                    </div>
+                    <div class="campo">
+                    <label for="">Comentarios</label>
+                    <textarea class="formulario__input" name="" id="" cols="30" rows="5"></textarea>
+                    </div>
+                </div>    
+                <div class="enviar">
+                    <input class="boton" type="submit" value="Enviar" />
+                </div>
+            </fieldset>
+            </form>
+        </section>
+    </div>
+
+    <!-- Footer con Bootstrap -->   
+    <div class="container-fluid">
+        <div class="row p-5 bg-secondary text-white">
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <p class="h3">Comics Salome</p>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <p class="h5">Facebook</p>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="../img/facebook.png" width="50" height="50" alt="facebook">
+                </a>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <p class="h5">Linkedin</p>
+                <a href="https://www.linkedin.com/" target="_blank">
+                    <img src="../img/linkedin.png" width="50" height="50" alt="linkedin">
+                </a>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <p class="h5">Twitter</p>
+                <a href="https://twitter.com/" target="_blank">
+                    <img src="../img/gorjeo.png" width="50" height="50" alt="twitter">
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Fin Footer -->
+
+    <!-- Footer 
+    <footer class="footer">
+        <a href="https://www.facebook.com/" target="_blank">
+            <img src="../img/facebook.png" width="50" height="50" alt="facebook">
+        </a>
+        <a href="https://twitter.com/" target="_blank">
+            <img src="../img/gorjeo.png" width="50" height="50" alt="twitter">
+        </a>
+        <a href="https://www.linkedin.com/" target="_blank">
+            <img src="../img/linkedin.png" width="50" height="50" alt="linkedin">
+        </a>
+        <p class="footer__texto">Buenos Aires, ARGENTINA 2022</p>
+    </footer>
+    Fin Footer -->
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" 
+            crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
