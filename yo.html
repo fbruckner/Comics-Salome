@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Normalize -->
+    <link rel="stylesheet" href="normalize.css">
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,7 +15,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
     <!-- Icono navegador -->
     <link rel="shortcut icon" type="image/x-icon" href="../img/Logo_Salo.ico">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <title>Salome COMICS</title>
+    
 </head>
 
 <body>
@@ -36,30 +42,30 @@
     <!-- Fin Barra navegación -->
 
     <!-- Main -->
-    <main class="contenedor__yo">
-        <h1 class="contenedor__titulo">Sobre mí</h1>
+    <main>
         
-        <p class="texto__yo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, suscipit quibusdam? Quod fugit nesciunt beatae illo quae aspernatur minima voluptate repudiandae quidem voluptas deserunt, laudantium omnis excepturi fuga reiciendis nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora cumque excepturi quisquam cum adipisci vero corporis error non laboriosam provident, commodi, odit ad debitis porro voluptatibus aperiam dolorem! Iure, quia!</p>
-        <p class="texto__yo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, suscipit quibusdam? Quod fugit nesciunt beatae illo quae aspernatur minima voluptate repudiandae quidem voluptas deserunt, laudantium omnis excepturi fuga reiciendis nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora cumque excepturi quisquam cum adipisci vero corporis error non laboriosam provident, commodi, odit ad debitis porro voluptatibus aperiam dolorem! Iure, quia!</p>
-        <div class="lista__yo">
-            <p class="texto__yo__masleidos">Los personajes que mas leo son:</p>
-            <ul class="texto__yo__masleidos__lista">
-                <li>Wonder Woman</li>
-                <li>Harley Quinn</li>
-                <li>Supergirl</li>
-                <li>The Joker</li>
-                <li>Batman</li>
-            </ul>
-        </div>
+        <h1 class="contenedor__yo">
+            <span style='--content: "Algo"; --start-color: #007CF0; --end-color: #00DFD8; --delay: 1s;'>Algo</span>
+            <span style='--content: "sobre"; --start-color: #7928CA; --end-color: #FF0080; --delay: 2s;'>sobre</span>
+            <span style='--content: "mí."; --start-color: #FF4d4d; --end-color: #F9CB28; --delay: 3s;'>mí.</span>
+        </h1>
+        <p class="parrafo__yo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus corrupti iure, animi dolore deserunt quidem, illo excepturi esse at ipsa delectus, eaque quos nulla nostrum placeat totam in beatae. Debitis?
+        Distinctio eveniet, nulla quisquam unde est commodi. Voluptatibus in possimus doloremque repellendus tempore vel eligendi? Consequatur fugit ea eum quam, voluptatibus cupiditate! Magnam ratione et natus veritatis quibusdam necessitatibus fugit.
+        Atque dolores omnis minima, ipsum consequuntur voluptatibus eius optio facilis, alias modi qui eligendi amet minus veritatis iusto perspiciatis repellendus odio voluptatum dolor incidunt! Ab, inventore nobis. Nemo, libero explicabo.
+        Quod sint tempora quasi necessitatibus rerum amet laborum nemo nulla, perferendis fugit. Libero quae doloribus, voluptates quisquam eligendi tenetur ex. Vitae unde fugiat eum non quia dicta voluptatum nam neque.
+        Quibusdam, nisi voluptas. Minus ducimus laudantium soluta asperiores, ipsa dicta vitae at ex, impedit eum voluptas. Quas qui dolor est debitis fuga? Provident et consequuntur hic id quasi distinctio libero.</p>
+           
     </main>
     <!-- Fin Main -->
+
+    <!-- Formulario -->
     <div class="formulario__formato">
         <section class="formulario" >
             <h2 class="formulario__contacto">Contacto</h2>
 
             <form action="">
             <fieldset>
-                <legend class="formulario__legend">Si tienes comics para vender, contáctame</legend>
+                <legend class="formulario__legend">Si tienes comics para vender, contáctame.</legend>
                 
                 <div class="formulario__campos">
                     <div class="campo">
@@ -86,20 +92,46 @@
             </form>
         </section>
     </div>
-    <!-- Footer -->
-    <footer class="footer">
-        <a href="https://www.facebook.com/">
-            <img src="../img/facebook.png" width="50" height="50" alt="facebook">
-        </a>
-        <a href="https://twitter.com/">
-            <img src="../img/gorjeo.png" width="50" height="50" alt="twitter">
-        </a>
-        <a href="https://www.linkedin.com/">
-            <img src="../img/linkedin.png" width="50" height="50" alt="linkedin">
-        </a>
-        <p class="footer__texto">Buenos Aires, ARGENTINA 2022</p>
-    </footer>
-    <!-- Fin Footer -->
+
+    <!-- Footer con Bootstrap -->   
+    <div class="container-fluid">
+        <div class="row p-5 pt-2 pb-2 footer text-white">
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <p class="h3">Comics Salome</p>
+                <a href="index.html">
+                    <img class="header__logo" src="../img/Logo_Salo.png" width="100" height="100" title="Volver al Home" alt="Logotipo">
+                </a>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <p class="h5">Facebook</p>
+                <a class="logo-social" href="https://www.facebook.com/" target="_blank">
+                    <img src="../img/facebook.png" width="50" height="50" alt="facebook">
+                </a>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <p class="h5">Linkedin</p>
+                <a href="https://www.linkedin.com/" target="_blank">
+                    <img src="../img/linkedin.png" width="50" height="50" alt="linkedin">
+                </a>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <p class="h5">Twitter</p>
+                <a href="https://twitter.com/" target="_blank">
+                    <img src="../img/gorjeo.png" width="50" height="50" alt="twitter">
+                </a>
+            </div>
+            <div class="col-xs-12">
+                <p class="text-white text-center">Copyright - All rights reserved 2022</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" 
+            crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

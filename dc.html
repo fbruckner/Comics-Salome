@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Normalize -->
+    <link rel="stylesheet" href="normalize.css">
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,6 +15,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
     <!-- Icono navegador -->
     <link rel="shortcut icon" type="image/x-icon" href="../img/Logo_Salo.ico">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <title>Salome COMICS</title>
 </head>
 
@@ -36,34 +41,54 @@
     <!-- Fin Barra navegación -->
 
     <!-- Main -->
-    <main class="contenedor">
-        <h1 class="contenedor__titulo">DC Comics</h1>
-        <section class="contenedor__imagenes1">
-            <img src="../img/batman-el-regreso-de-bruce-wayne.jpg" alt="Black and Gold" title="Wonder Woman Black and Gold">
-            <p class="texto__imagen">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam fuga incidunt officia ipsum porro libero doloribus rem nulla corrupti, tempora aperiam.</p>
-            <img src="../img/Blackest-Night.jpg" alt="Hiketeia" title="Wonder Woman Hiketeia">
-            <p class="texto__imagen">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam fuga incidunt officia ipsum porro libero doloribus rem nulla corrupti, tempora aperiam.</p>
-            <img src="../img/Consecuencias-de-52.jpg" alt="Tierra Uno" title="Wonder Woman Tierra Uno">
-            <p class="texto__imagen">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam fuga incidunt officia ipsum porro libero doloribus rem nulla corrupti, tempora aperiam.</p>
+    <section class="hero">
+        <div>
+            <h1 class="contenedor__hero">Algunos comics preferidos de DC</h1>
+        </div>
+    </section>
+
+    <main>
+        <section class="contenedor contenedor__imagenes1">
+            <article class="texto__imagen">
+                <img class="imagenes animacion__img" src="./img/Blackest-Night.jpg" alt="Black and Gold" title="Linterna Verde">
+                <p>A lo largo de las décadas, la muerte ha plagado el Universo DC y se ha llevado la vida de héroes y villanos por igual. ¿Pero con qué fin? Mientras la Guerra de la Luz hace estragos, la profecía de la Noche Más Oscura desciende sobre nosotros, con Hal Jordan y los Green Lantern Corps en el centro de todo.</p>
+            </article>
+            <article class="texto__imagen">
+                <img class="imagenes animacion__img" src="./img/batman-el-regreso-de-bruce-wayne.jpg" alt="Hiketeia" title="Eñ regreso de Bruce Wayne">
+                <p>El superguionista Grant Morrison aborda su proyecto más ambicioso hasta la fecha con EL REGRESO DE BRUCE WAYNE, una serie especial de seis partes que narra el regreso del hombre original detrás de la capa y la capucha de Batman..</p>
+            </article>
+            <article class="texto__imagen">
+                <img class="imagenes animacion__img" src="./img/Consecuencias-de-52.jpg" alt="Tierra Uno" title="Consecuencias">
+                <p>De las páginas de 52 llega Crime Bible! Este objeto fue de vital importancia en el desarrollo de la trama protagonizada por Question, Montoya y Batwoman en la serie semanal y ahora llega dispuesto a protagonizar su propio momento.La Biblia del Crimen revela algunos de sus misterios en estas páginas mientras la nueva Question anda tras ella para que no caiga en malas manos… Es más, la Biblia del Crimen cobrará protagonismo a medida que avance el año, finalice Countdown y empiece Crisis Final, con lo que más vale no perderle la pista..</p>
+            </article>
         </section>    
-        <section class="contenedor__imagenes2">    
-            <img src="../img/death-of-the-family.jpg" alt="Black White and Red" title="Harley Quinn Black White and Red">
-            <p class="texto__imagen">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam fuga incidunt officia ipsum porro libero doloribus rem nulla corrupti, tempora aperiam.</p>
-            <img src="../img/swamp-thing-moore.jpg" alt="White Knight" title="Harley Quinn White Knight">
-            <p class="texto__imagen">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam fuga incidunt officia ipsum porro libero doloribus rem nulla corrupti, tempora aperiam.</p>
-            <img src="../img/Trono-de-Atlantis.jpg" alt="Injustice Ground Zero - 1" title="Harley Quinn Injustice Ground Zero - 1">
-            <p class="texto__imagen">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam fuga incidunt officia ipsum porro libero doloribus rem nulla corrupti, tempora aperiam.</p>
+        <section class="contenedor contenedor__imagenes2">    
+            <article class="texto__imagen">
+                <img class="imagenes animacion__img" src="./img/Trono-de-Atlantis.jpg" alt="Trono de Atlanits" title="Trono de Atlantis">
+                <p>Las tensiones entre Atlantis y el mundo de la superficie alcanzan su punto más álgido cuando el Señor del Océano decide que ha llegado la hora de destruir Boston. ¿De qué lado se pondrá Aquaman? ¿Será capaz de enfrentarse a sus antiguos súbditos a pesar de que quizás tengan razón? Una saga imprescindible que fue adaptada al formato animado en 2015..</p>
+            </article>
+            <article class="texto__imagen">
+                <img class="imagenes animacion__img" src="./img/swamp-thing-moore.jpg" alt="El Monstruo del Pantano" title="El Monstruo del Pantano">
+                <p>Este es el cómic que situó en el mapa al guionista Alan Moore en la década de los ochenta gracias a su estilo narrativo único y a su forma deconstructiva de contar historias. Creado por un extraño accidente, la Cosa del Pantano creía que era el científico Alec Holland, pero cuando descubre su verdadera naturaleza, su universo queda destrozado y se embarca en un camino de descubrimientos y aventuras..</p>
+            </article>
+            <article class="texto__imagen">
+                <img class="imagenes animacion__img" src="./img/death-of-the-family.jpg" alt="Death of the Family" title="Death of the Family">
+                <p>Después de que le cortaran la cara hace un año, el Joker regresa a Gotham City. Pero esta vez va a por las personas más queridas de Bruce Wayne. Incluso para un hombre que ha cometido toda una vida de asesinatos, el Joker es más peligroso que nunca. Un Príncipe Payaso del Crimen más despiadado tiene como objetivo a la familia de Batman -Batgirl, Nightwing, Red Hood, Red Robin y el propio hijo de Batman, Damian Wayne, también conocido como Robin- en una enfermiza y retorcida táctica para hacer suyo al Caballero Oscuro. ¿Cómo puede Batman proteger su ciudad y a sus allegados?                    
+                Todo conduce al Asilo Arkham….</p>
+            </article>
         </section>
         
     </main>
     <!-- Fin Main -->
+
+    <!-- Formulario -->
     <div class="formulario__formato">
         <section class="formulario" >
             <h2 class="formulario__contacto">Contacto</h2>
 
             <form action="">
             <fieldset>
-                <legend class="formulario__legend">Si tienes comics para vender, contáctame</legend>
+                <legend class="formulario__legend">Si tienes comics para vender, contáctame.</legend>
                 
                 <div class="formulario__campos">
                     <div class="campo">
@@ -90,20 +115,47 @@
             </form>
         </section>
     </div>
-    <!-- Footer -->
-    <footer class="footer">
-        <a href="https://www.facebook.com/">
-            <img src="../img/facebook.png" width="50" height="50" alt="facebook">
-        </a>
-        <a href="https://twitter.com/">
-            <img src="../img/gorjeo.png" width="50" height="50" alt="twitter">
-        </a>
-        <a href="https://www.linkedin.com/">
-            <img src="../img/linkedin.png" width="50" height="50" alt="linkedin">
-        </a>
-        <p class="footer__texto">Buenos Aires, ARGENTINA 2022</p>
-    </footer>
-    <!-- Fin Footer -->
+
+    <!-- Footer con Bootstrap -->   
+    <div class="container-fluid">
+        <div class="row p-5 pt-2 pb-2 footer text-white">
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <p class="h3">Comics Salome</p>
+                <a href="index.html">
+                    <img class="header__logo" src="../img/Logo_Salo.png" width="100" height="100" title="Volver al Home" alt="Logotipo">
+                </a>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <p class="h5">Facebook</p>
+                <a class="logo-social" href="https://www.facebook.com/" target="_blank">
+                    <img src="../img/facebook.png" width="50" height="50" alt="facebook">
+                </a>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <p class="h5">Linkedin</p>
+                <a href="https://www.linkedin.com/" target="_blank">
+                    <img src="../img/linkedin.png" width="50" height="50" alt="linkedin">
+                </a>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <p class="h5">Twitter</p>
+                <a href="https://twitter.com/" target="_blank">
+                    <img src="../img/gorjeo.png" width="50" height="50" alt="twitter">
+                </a>
+            </div>
+            <div class="col-xs-12">
+                <p class="text-white text-center">Copyright - All rights reserved 2022</p>
+            </div>
+        </div>
+
+    </div>
+
+    
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" 
+            crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
