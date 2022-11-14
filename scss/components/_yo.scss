@@ -1,0 +1,49 @@
+/* Yo */
+.contenedor__yo {
+    margin: 0;
+    font-size: 100px;
+    font-weight: bold;
+    letter-spacing: -.06em;
+    text-align: center;
+    padding: 20px;
+    background-color: $primarioOscuro;
+}
+
+h1 span {
+    color: transparent;
+    padding: 0 10px;
+    line-height: 1.1;
+    position: relative;
+}
+span::before {
+    background: linear-gradient(90deg, var(--start-color), var(--end-color));
+    content: var(--content);
+    position: absolute;
+    inset: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animar 6s infinite;
+    animation-delay: var(--delay);
+}
+
+@keyframes animar {
+    0%, 16.66%, 100% {
+        opacity: 1;
+    }
+    33.33%, 83.33% {
+        opacity: 0;
+    }
+}
+
+.parrafo__yo {
+    background-color: $primarioOscuro;
+    margin: 0;
+    text-align: center;
+    color: $blanco;
+    font-size: 18px;
+    line-height: normal;
+    padding-top: 20px;
+    padding-right: 100px;
+    padding-bottom: 30px;
+    padding-left: 100px;
+}

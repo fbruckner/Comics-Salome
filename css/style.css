@@ -1,0 +1,302 @@
+@charset "UTF-8";
+/* Importación de parcial´s*/
+/* Reseteo full */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Selector universal */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.header {
+  background-image: url(/img/comics-justice-league-aquaman-batman-dc-comics-hd-wallpaper-preview.jpg);
+  /*background-repeat: no-repeat;*/
+  /*background-size: cover;*/
+}
+
+.nav-bag {
+  background-color: #d381e1;
+}
+
+.navegacion__principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .navegacion__principal {
+    flex-direction: row;
+    justify-content: space-evenly;
+    line-height: normal;
+  }
+}
+.navegacion__principal a {
+  color: #FFF;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.navegacion__principal a:hover {
+  background-color: #89119D;
+  border-radius: 10px;
+  color: #FFCE00;
+}
+
+.hero {
+  background-image: url(/img/customheader-3840x650_v4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 330px;
+  position: relative;
+}
+
+.contenedor__hero {
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 40px;
+  font-size: 40px;
+  color: #FFF;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+@media (min-width: 768px) {
+  .contenedor__hero {
+    font-size: 60px;
+    line-height: normal;
+  }
+}
+.contenedor {
+  margin: 0 auto;
+  background-color: #89119D;
+}
+
+@media (min-width: 768px) {
+  .contenedor {
+    display: flex;
+    justify-content: space-between;
+    flex: 0 0 calc(33.3% - 10px);
+  }
+}
+.imagenes {
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+.contenedor__imagenes1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .contenedor__imagenes1 {
+    flex-direction: row;
+  }
+}
+.contenedor__imagenes2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .contenedor__imagenes2 {
+    flex-direction: row;
+  }
+}
+.texto__imagen {
+  color: #FFF;
+  margin: 0 auto;
+  font-size: 14px;
+  padding: 10PX 10px;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1600px) {
+  .texto__imagen {
+    flex: 0 calc(33.3% - 10px);
+  }
+}
+/* Contacto */
+.formulario__formato {
+  background-color: #d381e1;
+}
+
+.formulario {
+  background-color: #89119D;
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.formulario__contacto {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  color: #FFF;
+  font-size: 30px;
+}
+
+.formulario fieldset {
+  border: none;
+}
+
+.formulario__legend {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #FFF;
+}
+
+textarea {
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+}
+
+.campo {
+  margin-bottom: 10px;
+}
+
+.campo label {
+  color: #FFF;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.formulario__input {
+  width: 100%;
+  border: none;
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.boton {
+  background-color: #d381e1;
+  color: #FFF;
+  padding: 10px 30px;
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
+  width: 90%;
+  text-align: center;
+  border: none;
+}
+
+@media (min-width: 768px) {
+  .boton {
+    width: auto;
+  }
+}
+.boton:hover {
+  cursor: pointer;
+}
+
+.enviar .boton {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .formulario {
+    width: 100%;
+  }
+}
+.animacion__img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+.container-fluid .footer {
+  background-color: #89119D;
+  padding-top: 20px;
+}
+
+.logo-social {
+  align-items: center;
+}
+
+.footer__texto {
+  color: #FFF;
+  size: 3px;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Yo */
+.contenedor__yo {
+  margin: 0;
+  font-size: 100px;
+  font-weight: bold;
+  letter-spacing: -0.06em;
+  text-align: center;
+  padding: 20px;
+  background-color: #89119D;
+}
+
+h1 span {
+  color: transparent;
+  padding: 0 10px;
+  line-height: 1.1;
+  position: relative;
+}
+
+span::before {
+  background: linear-gradient(90deg, var(--start-color), var(--end-color));
+  content: var(--content);
+  position: absolute;
+  inset: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animar 6s infinite;
+  animation-delay: var(--delay);
+}
+
+@keyframes animar {
+  0%, 16.66%, 100% {
+    opacity: 1;
+  }
+  33.33%, 83.33% {
+    opacity: 0;
+  }
+}
+.parrafo__yo {
+  background-color: #89119D;
+  margin: 0;
+  text-align: center;
+  color: #FFF;
+  font-size: 18px;
+  line-height: normal;
+  padding-top: 20px;
+  padding-right: 100px;
+  padding-bottom: 30px;
+  padding-left: 100px;
+}
+
+/*# sourceMappingURL=style.css.map */

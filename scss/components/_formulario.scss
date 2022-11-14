@@ -1,0 +1,87 @@
+/* Contacto */
+.formulario__formato {
+    background-color: $primario;
+}
+
+.formulario {
+    background-color: $primarioOscuro;
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.formulario__contacto {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    color: $blanco;
+    font-size: 30px;
+}
+
+.formulario fieldset{
+    border: none;
+}
+
+.formulario__legend {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: $blanco;
+}
+
+textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+.campo {
+    margin-bottom: 10px;
+}
+.campo label {
+    color: $blanco;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+.formulario__input {
+    width: 100%;
+    border: none;
+    padding: 5px;
+    border-radius: 15px;
+}
+.boton {
+    background-color: $primario;
+    color: $blanco;
+    padding: 10px 30px;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 90%;
+    text-align: center;
+    border: none;
+}
+@media (min-width: 768px) {
+    .boton {
+        width: auto;
+    }
+}
+.boton:hover {
+    cursor: pointer;
+}
+.enviar .boton {
+    width: 100%;
+}
+@media (max-width:768px ) {
+     .formulario {
+        width: 100%;
+     }
+}
+.animacion__img:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+}
