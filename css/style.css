@@ -132,6 +132,11 @@ body {
   height: 100%;
 }
 
+.texto__imagen span {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 @media (max-width: 1600px) {
   .texto__imagen {
     flex: 0 calc(33.3% - 10px);
